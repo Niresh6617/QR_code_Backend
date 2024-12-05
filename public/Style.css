@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(155,25,171,1) 77%);
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    width: 400px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    /* margin: 0px auto; */
+    padding: 10px ;
+    
+}
+.Qr-code{
+    max-width: 95%;
+    /* border: 1px solid black; */
+    padding: 20px;
+    font-family: sans-serif;
+
+}
+.Qr-code h4{
+    font-size: 20px;
+    display: inline-block;
+    font-family: sans-serif; 
+}
+.Qr-code p{
+    font-size:15px ;
+    margin-top: 20px;
+}
+.Qr-code input{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px ;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.Qr-code button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, rgba(35, 229, 80, 0.749), rgba(221, 16, 81, 0.708));
+
+}
