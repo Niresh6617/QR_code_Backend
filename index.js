@@ -43,4 +43,7 @@ app.post('/qrcodedata',(req,res)=>{
     })
 })
 
-app.listen(10000)
+app.listen(10000,()=>{
+    console.log("the server is running");
+    
+})
