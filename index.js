@@ -39,6 +39,8 @@ app.get('/',(request,response)=>{
 app.post('/qrcodedata',(req,res)=>{
     console.log(req.body.inputtag);
     let mydata=req.body.inputtag
+    const QRcodeImage =  path.join(__dirname,"public","qrcode.png")
+    qrcode.toFile(QRcodeImage,mydata) 
     qrcode.toDataURL(mydata,(err,value)=>{
         console.log(value);
         res.render('thankyou',{"converturl":value})
